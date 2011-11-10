@@ -14,9 +14,9 @@
 \fancyfoot{}
 \fancyhead[L]{Übung Rechnerstrukturen}
 \fancyhead[R]{11. November 2011}
-\fancyfoot[R]{Martin Dreher, Elena Noll}
+\fancyfoot[R]{Elena Noll, Martin Dreher }
 \fancyfoot[C]{\thepage}
-\fancyfoot[L]{Matrikelnr: ???, 6354762}
+\fancyfoot[L]{Matrikelnr: 6335415, 6354762}
 
 \newcommand\T{\rule{0pt}{2.6ex}}
 \setlength{\parindent}{0pt}
@@ -28,12 +28,102 @@
  
  \section*{Aufgabenblatt 2}
  
- \textbf{Namen: } Elena Noll, Martin Dreher \\
- \textbf{Matrikelnummer: }???, 6354762
+ \begin{tabular}{l l l}
+ \textbf{Namen: } & Elena Noll, & Martin Dreher \\
+ \textbf{Matrikel: } & 6335415, & 6354762
+ \end{tabular}
  
  \subsection*{Aufgabe 2.1}
+ In dieser Aufgabe gehen wir von den SI-Binärpräfixen (1 KB = 1000 B) aus.
+ 
+ \subsubsection*{(a)}
+ Das Register kann $2^{64} = 18\,446\,744\,073\,709\,551\,616$ verschieden Werte annehmen. Die Taktfrequenz entspricht
+ $$3,1 \textrm{ GHz} = 3\,100\,000\,000 \textrm{ Berechnungen / Sekunde}$$
+ 
+ Somit gilt für den Überlaufzeitpunkt $t$:
+ $$3\,100\,000\,000 \cdot t = 18\,446\,744\,073\,709\,551\,617 \Leftrightarrow t \approx 5\,950\,562\,604,4 \textrm{ Sekunden}$$
+ 
+ Also läuft das Register erst nach ca. 188 Jahren über (Genauer: 188 Jahren 8 Monaten 8 Tagen 22 Stunden 3 Minuten und 24.4 Sekunden). Wenn die CPU vom 11.11.2011 an durchgehend laufen würde, würde sie am 5. Juni 2200 überlaufen.
+ 
+ \subsubsection*{(b)}
+ 
+ Der Überlaufzeitpunkt des kleineren Registers $t'$ ist:
+ $$3\,100\,000\,000 \cdot t' = 2^{32}+1 = 4\,294\,967\,297 \Leftrightarrow t' \approx 1,385 \textrm{ Sekunden}$$
+ 
+ Dieser Prozessor würde also schon innerhalb der zweiten Sekunde das Register durchlaufen.
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ 
+
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
  
  
+ \subsection*{2.6} 
+ Das Komplement einer Zahl $z$ zur Basis $n$ lautet: 
+ $$K_b(z) = \begin{cases} b^n− z & \textrm{für } z \neq 0\\
+0& \textrm{für } z = 0\end{cases}$$
+$$K_{b-1}(z) =  \begin{cases} b^n - b^{-m}− z & \textrm{für } z \neq 0\\
+0& \textrm{für } z = 0\end{cases}$$
+ Wobei $n$ die Anzahl der Vorkommastellen und $m$ die Anzahl der Nachkommastellen ist.
+ \subsubsection*{(a)} Sei $n = 1$:
+  
+ $K_{10}(4,381)_{10} = 10^1 - 4,381 = 5,619_{10}$
+ \subsubsection*{(b)}Sei $n = 0$, $m=4$:
  
+ $K_9(0,4172)_{10} = 10^0 - 10^{-4} - 0,4172 = 1 - 0,0001 - 0,4172  = 0,5827_{10}$
+ \subsubsection*{(c)}
+ Wir rechnen nun im Dualsystem. Sei $n = 1$:
+ $$K_2(1,011)_2 = 10^1 - 1,011 = 0,101_2$$
+ Rechnung:
+ $$
+ \begin{array}{r r}
+ &10,000\\
+ -&\underset{1}{\;}\underset{1}{1},\underset{1}{0}\underset{1}{1}\underset{\;}{1}\\
+ \hline
+ &00,101 
+ \end{array}$$
+ \subsubsection*{(d)}Sei $n=100_2$ und $m=10_2$: 
+ $$K_1(110,01)_2 = 10^{100} - 10^{-10} - 110,01 = 1000 - 0,01 - 110,01 = 1,1_2$$
+ 
+ Rechnung:
+ $$\begin{array}{r r}
+ & 1000,00\\
+ -&   0,01\\
+ -&\underset{1}{\;}\underset{1}{1}\underset{1}{1}\underset{1}{0},\underset{1}{0}1\\
+ \hline
+ &0001,10
+ \end{array}$$
+ 
+ \subsection*{2.7} 
+ \begin{center}
+
+ \begin{tabular}{r||r|r|r|r|r}
+ Teil & Ganzzahl & Betrag+VZ & Exzess-127 & Einerkomp. & Zweierkomp.\\
+ \hline \T
+ \textbf{(a) 00001011} &  11 &   11&  116&   11&   11\\
+ \textbf{(b) 01100110} & 102 &  102&   15&  102&  102\\
+ \textbf{(c) 10000001} & 129 &   -1&   -2& -126& -127\\
+ \textbf{(d) 11111110} & 254 & -126& -127&   -1&   -2\\
+ \end{tabular}
+\end{center}
+
+
+
+
+
+
 \end{document}
