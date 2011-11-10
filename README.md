@@ -1,5 +1,5 @@
-Rechnerstrukturen Übungen
+ï»¿Rechnerstrukturen Ãœbungen
 =========================
 
-Repository für die Übungen der Rechnerstrukturen Vorlesung an der Hamburger Uni WS 2011/2012.
+Repository fÃ¼r die Ãœbungen der Rechnerstrukturen Vorlesung an der Hamburger Uni WS 2011/2012.
 
