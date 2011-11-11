@@ -52,23 +52,190 @@
  
  Dieser Prozessor würde also schon innerhalb der zweiten Sekunde das Register durchlaufen.
  
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- 
- 
 
+\subsection*{Aufgabe 2.1}
 
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Aufgabe 2.2}
+\subsection*{a)}
+\begin{align*}
+49 : 2 = 24,5 \Rightarrow 1 \\
+24 : 2 = 12 \Rightarrow 0 \\
+12 : 2 = 6 \Rightarrow 0 \\
+6 : 2 = 3 \Rightarrow 0 \\
+3 : 2 = 1,5 \Rightarrow 1 \\
+1 : 2 = 0,5 \Rightarrow 1 \\
+\Rightarrow [49]_{10} = [110001]_{2} \\
+\\
+49 : 8 = 6 \Rightarrow \textrm{ \textrm{ Rest }: } 1 \\
+6 : 8 = 0 \Rightarrow \textrm{ \textrm{ Rest }: } 6 \\
+\Rightarrow [49]_{10} = [61]_{8} \\
+\\
+49 : 16 = 3 \Rightarrow \textrm{ \textrm{ Rest }: } 1 \\
+3 : 16 = 0 \Rightarrow \textrm{ \textrm{ Rest }: } 3 \\
+\Rightarrow [49]_{10} = [31]_{16}
+\end{align*}
+\subsubsection*{b)}
+\begin{align*}
+2011 : 2 = 1005,5 \Rightarrow 1 \\
+1005 : 2 = 502,5 \Rightarrow 1 \\
+502 : 2 = 251 \Rightarrow 0 \\
+251 : 2 = 125,5 \Rightarrow 1 \\
+125 : 2 = 62,5 \Rightarrow 1 \\
+62 : 2 = 31 \Rightarrow 0 \\
+31 : 2 = 15,5 \Rightarrow 1 \\
+15 : 2 = 7,5 \Rightarrow 1 \\
+7 : 2 = 3,5 \Rightarrow 1 \\
+3 : 2 = 1,5 \Rightarrow 1 \\
+1 : 2 = 0,5 \Rightarrow 1 \\
+\Rightarrow [2011]_{10} = [11111011011]_{2} \\
+\\
+2011 : 8 = 251 \Rightarrow \textrm{ \textrm{ Rest }: } 3 \\
+251 : 8 = 31 \Rightarrow \textrm{ \textrm{ Rest }: } 3 \\
+31 : 8 = 3 \Rightarrow \textrm{ \textrm{ Rest }: } 7 \\
+3 : 8 = 0 \Rightarrow \textrm{ \textrm{ Rest }: } 3 \\
+\Rightarrow [2011]_{10} = [3733]_{8} \\
+\\
+2011 : 16 = 125 \Rightarrow \textrm{ \textrm{ Rest }: } 11 \\
+125 : 16 = 7 \Rightarrow \textrm{ Rest } 13 \\
+7 : 16 = 0 \Rightarrow \textrm{ Rest } 7 \\
+\Rightarrow [2011]_{10} = [7DB]_{16}
+\end{align*}
+\subsubsection*{c)}
+\begin{align*}
+2 * 0,53125 = 1,0625 \Rightarrow \textrm{ Ziffer: } 1 \\
+2 * 0,0625 = 0,125 \Rightarrow \textrm{ Ziffer: } 0 \\
+2 * 0,125 = 0,25 \Rightarrow \textrm{ Ziffer: } 0 \\
+2 * 0,25 = 0,5 \Rightarrow \textrm{ Ziffer: } 0 \\
+2 * 0,5 = 1 \Rightarrow \textrm{ Ziffer: } 1 \\
+\Rightarrow [0,53125]_{10} = [0,10001]_{2} \\
+\\
+8 * 0,53125 = 4,25 \Rightarrow \textrm{ Ziffer: } 4 \\
+8 * 0,25 = 2 \Rightarrow \textrm{ Ziffer: } 2 \\
+\Rightarrow [0,53125]_{10} = [0,42]_{8} \\
+\\
+16 * 0,53125 = 8,5 \Rightarrow \textrm{ Ziffer: } 8 \\
+16 * 0,5 = 8 \Rightarrow \textrm{ Ziffer: } 8 \\
+\Rightarrow [0,53125]_{10} = [0,88]_{16}
+\end{align*}
+\subsubsection*{d)}
+\begin{align*}
+135 : 2 = 67,5 \Rightarrow 1 \\
+67 : 2 = 33,5 \Rightarrow 1 \\
+33 : 2 = 16,5 \Rightarrow 1 \\
+16 : 2 = 8 \Rightarrow 0 \\
+8 : 2 = 4 \Rightarrow 0 \\
+4 : 2 = 2 \Rightarrow 0 \\
+2 : 2 = 1 \Rightarrow 0 \\
+1 : 2 = 0,5 \Rightarrow 1 \\
+\\
+2 * 0,375 = 0,75 \Rightarrow \textrm{ Ziffer: } 0 \\
+2 * 0,75 = 1,5 \Rightarrow \textrm{ Ziffer: } 1 \\
+2 * 0,5 = 1 \Rightarrow \textrm{ Ziffer: } 1 \\
+\Rightarrow [135,375]_{10} = [10000111,011]_{2} \\
+\\
+135 : 8 = 16 \Rightarrow \textrm{ \textrm{ Rest }: } 7 \\
+16 : 8 = 2 \Rightarrow \textrm{ \textrm{ Rest }: } 0 \\
+2 : 8 = 0 \Rightarrow \textrm{ \textrm{ Rest }: } 2 \\
+\\
+0,375 * 8 = 3 \Rightarrow \textrm{ Ziffer: } 3 \\
+\Rightarrow [135,375]_{10} = [207,3]_{8} \\
+\\
+135 : 16 = 8 \Rightarrow \textrm{ \textrm{ Rest }: } 7 \\
+8 : 16 = 0 \Rightarrow \textrm{ \textrm{ Rest }: } 8 \\
+\\
+16 * 0,375 = 6 \Rightarrow \textrm{ Ziffer: } 6 \\
+\Rightarrow [135,375]_{10} = [87,6]_{16}
+\end{align*}
+
+\subsection*{2,3}
+\subsubsection*{a)}
+\begin{align*}
+0 * 1 = 0 \\
+1 * 2 = 2 \\
+0 * 4 = 0 \\
+1 * 8 = 8 \\
+\Rightarrow 0 + 2 + 0 + 8 = 10 \\
+\\
+1 * 1 = 1 \\
+1 : 2 = 0,5 \\
+\\
+\Rightarrow 10 + 0,5 = 10,5 \\
+\Rightarrow [1010,1]_{2} = [10,5]_{10}
+\end{align*}
+\subsubsection*{b)}
+\begin{align*}
+0 * 1 = 0 \\
+1 * 2 = 2 \\
+0 * 4 = 0 \\
+1 * 8 = 8 \\
+1 * 16 = 16 \\
+\Rightarrow 0 + 2 + 0 + 8 + 16 = 26 \\
+\\
+1 * 1 = 1 \\
+1 * 2 = 2 \\
+0 * 4 = 0 \\
+0 * 8 = 0 \\
+1 * 16 = 16 \\
+\Rightarrow 1 + 2 + 0 + 0 + 16 = 19 \\
+19 : 32 = 0,59375\\
+\\
+\Rightarrow 26 + 0,59375 = 26,59375 \\
+\Rightarrow [11010,10011]_{2} = [26,59375]_{10}
+\end{align*}
+
+\subsection*{Aufgabe 2.4}
+\begin{align*}
+27355 + 16195 = 43550 \\
+\\
+[27355]_{10} = [110101011011011]_{2} \textrm{ (Rechnung siehe Aufgabe 2.2)} \\
+[16195]_{10} = [11111101000011]_{2} \textrm{ (Rechnung siehe Aufgabe 2.2)} \\
+\\
+1 + 1 = 0 ~(1 \textrm{ Übertrag}) \\
+1 + 1 + 1 = 1 ~(1 \textrm{ Übertrag}) \\
+0 + 0 + 1 = 1 \textrm{ (kein Übertrag) } \\
+1 + 0 = 1 \textrm{ (kein Übertrag) } \\
+1 + 0 = 1 \textrm{ (kein Übertrag) } \\
+0 + 0 = 0 \textrm{ (kein Übertrag) } \\
+1 + 1 = 0 ~(1 \textrm{ Übertrag}) \\
+1 + 0 + 1 = ~0 ~(1 \textrm{ Übertrag}) \\
+0 + 1 + 1 = ~0 ~ (1 \textrm{ Übertrag}) \\
+1 + 1 + 1 = ~1 ~(1 \textrm{ Übertrag}) \\
+0 + 1 + 1 = ~0~ (1 \textrm{ Übertrag}) \\
+1 + 1 + 1 = ~1~ (1 \textrm{ Übertrag}) \\
+0 + 1 + 1 = ~0~ (1 \textrm{ Übertrag}) \\
+1 + 1 + 1 = ~1~ (1 \textrm{ Übertrag}) \\
+1 + 1 = 0 ~(1 \textrm{ Übertrag}) \\
+1 = 1 \\
+\Rightarrow [110101011011011]_{2} + [11111101000011]_{2} = [1010101000011110]_{2} \\
+\\
+[1010101000011110]_{2} = [43550]_{10} \textrm{(Rechnung siehe Aufgabe 2.3)}
+\end{align*}
+
+\subsection*{Aufgabe 2.5}
+\begin{align*}
+1 * 10111001 = 10111001 \\
+1 * 10111001 = 10111001 \\
+0 * 10111001 = 00000000 \\
+1 * 10111001 = 10111001 \\
+0 * 10111001 = 00000000 \\
+1 * 10111001 = 10111001 \\
+\\
+1 = 1 ~(0 \textrm{ Übertrag}) \\
+0 + 0 = 0 ~(0 \textrm{ Übertrag}) \\
+0 + 0 + 1 = 1 ~(0 \textrm{ Übertrag}) \\
+1 + 0 + 0 + 0 = 1 ~(0 \textrm{ Übertrag}) \\
+1 + 0 + 0 + 0 + 1 = 0 ~(1 \textrm{ Übertrag}) \\
+1 + 0 + 1 + 0 + 0 + 1 + 1 = 0 ~(10 \textrm{ Übertrag}) \\
+0 + 0 + 1 + 0 + 0 + 0 + 0 = 1 ~(0 \textrm{ Übertrag}) \\
+1 + 0 + 1 + 0 + 1 + 0 + 1 = 0 ~(10 \textrm{ Übertrag}) \\
+0 + 0 + 0 + 1 + 1 + 0 = 0 ~(1 \textrm{ Übertrag}) \\
+1 + 0 + 1 + 1 + 1 + 1 = 1 ~(10 \textrm{ Übertrag}) \\
+0 + 0 + 1 + 0 = 1 ~(0 \textrm{ Übertrag}) \\
+1 + 0 + 1 = 0 ~(1 \textrm{ Übertrag}) \\
+1 + 1 = 0 ~(1 \textrm{ Übertrag}) \\
+1 = 1 \\
+\Rightarrow [10111001]_{2} * [110101]_{2} = [10110010011001]_{2}
+\end{align*}
  
  
  
