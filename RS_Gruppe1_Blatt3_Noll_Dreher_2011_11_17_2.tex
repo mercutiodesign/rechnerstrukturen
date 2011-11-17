@@ -1,0 +1,102 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{ucs}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{icomma}
+\usepackage{booktabs}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{Übung Rechnerstrukturen}
+\fancyhead[R]{17. November 2011}
+\fancyfoot[R]{Elena Noll, Martin Dreher }
+\fancyfoot[C]{\thepage}
+\fancyfoot[L]{Matrikelnr: 6335415, 6354762}
+
+\newcommand\T{\rule{0pt}{2.6ex}}
+\setlength{\parindent}{0pt}
+
+\author{Martin Dreher}
+\title{Übung Rechnerstrukturen}
+
+\begin{document}
+ 
+
+\section*{Aufgabe 3.1}
+\subsection*{(a)}
+\[5385_{10} - 732_{10}\]
+\[= K_(K_5385 + 732)\]
+\[= K_(10000-5385 + 732)\]
+\[= K_(4615 + 732)\]
+\[= K_5347\]
+\[= 10000-5347\]
+\[= 4653\]
+\subsection*{(b)}
+\[732_{10} - 867_{10}\]
+\[= K_(K_732 + 867)\]
+\[= K_(1000-732 + 867)\]
+\[= K_(268 + 867)\]
+\[= K_1135\]
+\[= 1000-1135\]
+\[= -135\]
+
+\section*{Aufgabe 3.2}
+\subsection*{(a)}
+\[(47,252|3)_{10}\]
+\[= 47,252 * 10^3\]
+\[= 4,7252 * 10^4\]
+\subsection*{(b)}
+\[(-10101,11|-101)_2\]
+\[= -10101,11 * 2^-101\]
+\[= -1010,111 * 2^-100\]
+\[= -101,0111 * 2^-11\]
+\[= -10,10111 * 2^-10\]
+\[= -1,010111 * 2^-1\]
+\subsection*{(c)}
+\[-0,002DA|C)_{16}\]
+\[= -0,002DA * 16^C\]
+\[= -0,02DA * 16^B\]
+\[= -0,2DA * 16^A\]
+\[= -2,DA * 16^9\]
+
+\section*{Aufgabe 3.3}
+\subsection*{(a)}
+\[101 1000\]
+\[1011000,0\]
+\[Norm:\]
+\[1,011000 | 1001\]
+\[1001 = 9\]
+\[9 + 127 = 136 = 128 + 8 = 10001000\]
+\[0 | 10001000 | 01100000000000000000000\]
+\subsection*{(b)}
+\[-10011011,101\]
+\[-1,0011011101 | 1001\]
+\[1 | 10001000 | 00110111010000000000000\]
+
+\section*{Aufgabe 3.4}
+\[7,516 * 10^6 + 9,9453 * 10^8\]
+\[= (0,07516 + 9,9453) 10^8\]
+\[...\]
+
+\section*{Aufgabe 3.5}
+\[(2,6538 * 10^3) x (3,1415 * 10^5)\]
+\[= (0,026538 * 10^5) x (3,1415 * 10^5)\]
+\[...\]
+
+\section*{Aufgabe 3.6}
+\subsection*{(a)}
+0A 44 69 65 73 65 0A 20 4C F6 73 75 6E 67 0A 20 20 62 72 69 6E 67 74 0A \\
+20 20 20 49 68 6E 65 6E 0A 20 20 20 20 28 66 61 73 74 29 0A 20 20 20 20 \\
+20 31 35 20 50 75 6E 6B 74 65 21 \\
+LF D i e s e LF SP L ö s u n g LF SP SP bringt LF \\
+SP SP SP I h n e n LF SP SP SP SP (fast) LF SP SP SP SP \\
+SP 15 P u n k t e !
+\subsection*{(b)}
+
+
+\end{document}
