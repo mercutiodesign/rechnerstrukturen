@@ -8,6 +8,7 @@
 \usepackage{fancyhdr}
 \usepackage{icomma}
 \usepackage{booktabs}
+\usepackage{bbding}
 
 \pagestyle{fancy}
 \fancyhead{}
@@ -19,6 +20,7 @@
 \fancyfoot[L]{Matrikelnr: 6335415, 6354762}
 
 \newcommand\T{\rule{0pt}{2.6ex}}
+\newcommand\lin{{\tiny \ArrowBoldDownRight}}
 \setlength{\parindent}{0pt}
 
 \author{Martin Dreher}
@@ -35,7 +37,7 @@
 \[= K_(4615 + 732)\]
 \[= K_5347\]
 \[= 10000-5347\]
-\[= 4653\]
+\[= 4653_10\]
 \subsection*{(b)}
 \[732_{10} - 867_{10}\]
 \[= K_(K_732 + 867)\]
@@ -43,20 +45,20 @@
 \[= K_(268 + 867)\]
 \[= K_1135\]
 \[= 1000-1135\]
-\[= -135\]
+\[= -135_10\]
 
 \section*{Aufgabe 3.2}
 \subsection*{(a)}
 \[(47,252|3)_{10}\]
 \[= 47,252 * 10^3\]
 \[= 4,7252 * 10^4\]
-\subsection*{(b)}
+\subsection*{(b)} (Komplett mit Basis 2 gerechnet)
 \[(-10101,11|-101)_2\]
-\[= -10101,11 * 2^-101\]
-\[= -1010,111 * 2^-100\]
-\[= -101,0111 * 2^-11\]
-\[= -10,10111 * 2^-10\]
-\[= -1,010111 * 2^-1\]
+\[= -10101,11 * 10^{-101}\]
+\[= -1010,111 * 10^{-100}\]
+\[= -101,0111 * 10^{-11}\]
+\[= -10,10111 * 10^{-10}\]
+\[= -1,010111 * 10^{-1}\]
 \subsection*{(c)}
 \[-0,002DA|C)_{16}\]
 \[= -0,002DA * 16^C\]
@@ -90,12 +92,30 @@
 
 \section*{Aufgabe 3.6}
 \subsection*{(a)}
-0A 44 69 65 73 65 0A 20 4C F6 73 75 6E 67 0A 20 20 62 72 69 6E 67 74 0A \\
-20 20 20 49 68 6E 65 6E 0A 20 20 20 20 28 66 61 73 74 29 0A 20 20 20 20 \\
-20 31 35 20 50 75 6E 6B 74 65 21 \\
-LF D i e s e LF SP L ö s u n g LF SP SP bringt LF \\
-SP SP SP I h n e n LF SP SP SP SP (fast) LF SP SP SP SP \\
-SP 15 P u n k t e !
+Die Übersetzung ist wie folgt:
+
+\begin{tiny}
+
+\texttt{\begin{tabular}{l l l l l l l l l l l l l l l l l l l l l l l l}
+0A & 44 & 69 & 65 & 73 & 65 & 0A & 20 & 4C & F6 & 73 & 75 & 6E & 67 & 0A & 20 & 20 & 62 & 72 & 69 & 6E & 67 & 74 & 0A\\
+20 & 20 & 20 & 49 & 68 & 6E & 65 & 6E & 0A & 20 & 20 & 20 & 20 & 28 & 66 & 61 & 73 & 74 & 29 & 0A & 20 & 20 & 20 & 20\\
+20 & 31 & 35 & 20 & 50 & 75 & 6E & 6B & 74 & 65 & 21 & & & & & & & & & & & & &\\
+LF & D & i & e & s & e & LF & SP & L & ö & s & u & n & g & LF & SP & SP & b & r & i & n & g & t & LF\\
+SP & SP & SP & I & h & n & e & n & LF & SP & SP & SP & SP & ( & f & a & s & t & ) & LF & SP & SP & SP & SP\\
+SP & 15 & P & u & n & k & t & e & ! & & & & & & & & & & & & &
+\end{tabular}}
+\end{tiny}
+
+Oder als Text:
+
+\texttt{\lin \\
+Diese \lin\\
+$\cdot$Lösung \lin\\
+$\cdot\cdot$bringt \lin\\
+$\cdot\cdot\cdot$Ihnen \lin\\
+$\cdot\cdot\cdot\cdot$(fast) \lin\\
+$\cdot\cdot\cdot\cdot\cdot$15$\cdot$Punkte!}
+
 \subsection*{(b)}
 
 
